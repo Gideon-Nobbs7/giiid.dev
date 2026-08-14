@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #f6f7f9;
+  --secondary-color: #0f1115;
+  --primary-text: #11151c;
+  --secondary-text: #5b6472;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Satoshi, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--primary-color);
+  min-width: 360px;
+  scrollbar-gutter: stable;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cursor-trail {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+
+  background-color: hsla(0, 0%, 100%, 0.01);
+  backdrop-filter: invert(100%);
+  -webkit-backdrop-filter: invert(100%);
+  z-index: 9999;
+  will-change: transform;
+  pointer-events: none;
+  border-radius: 50%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.mail-cursor {
+  cursor: url("/assets/mail.png"), pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.doc-padding {
+  padding-top: clamp(32px, 7.2vh, 56px);
+  padding-bottom: clamp(32px, 7.2vh, 56px);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.doc-padding-top {
+  padding-top: clamp(32px, 7.2vh, 56px);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.doc-padding-bottom {
+  padding-bottom: clamp(32px, 7.2vh, 56px);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
