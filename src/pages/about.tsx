@@ -27,10 +27,10 @@ export default function AboutPage() {
             payment processing to event-driven data pipelines.
           </p>
           <p>
-            My path into software wasn&apos;t the usual one. I came to
-            engineering with a background in working with real-world data and
-            thinking about problems as systems. That curiosity about how
-            things fit together is what pulled me into backend development.
+            I came to engineering with a background in working with
+            real-world data and thinking about problems as systems. That
+            curiosity about how things fit together is what pulled me into
+            backend development.
           </p>
           <p>
             I&apos;ve since worked across edtech, CRM, and AI-driven
